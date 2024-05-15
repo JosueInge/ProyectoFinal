@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".ContratoActivity">
+
+    <TextView
+        android:id="@+id/lblContrato"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="CONTRATO DE TRANSPORTE"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imgCont"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblContrato"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="165dp"
+        android:src="@android:drawable/ic_menu_camera" />
+
+    <EditText
+        android:id="@+id/txtGuia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgCont"
+        android:hint="Guia"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGuia"
+        android:hint="Telefono"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/txtPersonas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTelefono"
+        android:hint="N° Personas"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtDestino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPersonas"
+        android:hint="Destino"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtTiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDestino"
+        android:hint="Tiempo"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnGuardarCont"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTiempo"
+        android:layout_marginLeft="90dp"
+        android:text="Guardar" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnVolverLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@android:drawable/ic_menu_edit"
+        app:backgroundTint="#1565C0" />
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondomenu"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/lblRegist"
+        android:layout_width="191dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="110dp"
+        android:text="SIVAR TOURS"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txtRegistro"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lblRegist"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+        android:text="Selecciona una atraccion"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnmiradores"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRegistro"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Miradores" />
+
+    <Button
+        android:id="@+id/btnPlayas"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRegistro"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="20dp"
+        android:text="Playas" />
+
+    <Button
+        android:id="@+id/btnBalnearios"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnmiradores"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Balnearios" />
+
+    <Button
+        android:id="@+id/btnPlazas"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnmiradores"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="30dp"
+        android:text="Plazas" />
+
+    <Button
+        android:id="@+id/btnCaminatas"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBalnearios"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Caminatas" />
+
+    <Button
+        android:id="@+id/btnParques"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPlazas"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="30dp"
+        android:text="Parques" />
+
+    <Button
+        android:id="@+id/btnCines"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCaminatas"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Cines" />
+
+    <Button
+        android:id="@+id/btnArqueologos"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnParques"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="30dp"
+        android:text="Arqueologos" />
+
+    <Button
+        android:id="@+id/btnHoteles"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCines"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Hoteles" />
+
+    <Button
+        android:id="@+id/btnRestaurant"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnArqueologos"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="30dp"
+        android:text="Restaurantes" />
+
+    <Button
+        android:id="@+id/btnTransporte"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnHoteles"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:text="Contratar Transporte" />
+
+    <TextView
+        android:id="@+id/txtCerrar"
+        android:layout_width="109dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/btnHoteles"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="155dp"
+        android:text="Cerrar Sesion"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:src="@android:drawable/ic_lock_power_off"
+        app:backgroundTint="#1565C0" />
+
+</RelativeLayout>

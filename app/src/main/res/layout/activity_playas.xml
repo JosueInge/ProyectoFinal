@@ -5,17 +5,155 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondomenu"
-    tools:context=".MiradoresActivity">
+    tools:context=".PlayasActivity">
 
-    <TextView
-        android:id="@+id/lblPlayas"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/VolverPlayas"
         android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_marginLeft="140dp"
-        android:text="MIRADORES"
-        android:textColor="@color/white"
-        android:layout_marginTop="10dp"
-        android:textSize="25dp"
-        android:textStyle="bold" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@android:drawable/ic_menu_revert"
+        app:backgroundTint="#00BCD4" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblPlayas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:text="PLAYAS"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgPlayaElEspino"
+                android:layout_width="149dp"
+                android:layout_height="134dp"
+
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/lblPlayas"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/playaelespino" />
+            <TextView
+                android:id="@+id/TituloPlayaElEspino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PLAYA EL ESPINO"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_below="@id/lblPlayas"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="170dp"/>
+            <TextView
+                android:id="@+id/DescriptionPlayaElEs"
+                android:layout_width="204dp"
+                android:layout_height="83dp"
+                android:layout_below="@id/TituloPlayaElEspino"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="23dp"
+                android:text="Playa El Espino es una playa de más de 10 kilómetros de longitud, ubicada en el municipio de Jucuarán, departamento de Usulután."
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imgPlayaCost"
+                android:layout_width="149dp"
+                android:layout_height="134dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/imgPlayaElEspino"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/playacostadelsol" />
+            <TextView
+                android:id="@+id/TituloPlayaCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PLAYA COSTA DEL SOL"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_below="@id/DescriptionPlayaElEs"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="170dp"/>
+            <TextView
+                android:id="@+id/DescriptionPlayaCost"
+                android:layout_width="204dp"
+                android:layout_height="83dp"
+                android:layout_below="@id/TituloPlayaCost"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="23dp"
+                android:text="Playa popular para nadar, con palmeras y aguas poco profundas. También hay hoteles y marisquerías.
+
+                La playa Costa del Sol es una joya natural ubicada en el departamento de La Paz, en la zona central de El Salvador."
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imgPlayaLosCob"
+                android:layout_width="149dp"
+                android:layout_height="134dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/imgPlayaCost"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/playaloscobanos" />
+            <TextView
+                android:id="@+id/TituloPlayaLosCob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PLAYA LOS COBANOS"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_below="@id/DescriptionPlayaCost"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="170dp"/>
+            <TextView
+                android:id="@+id/DescriptionPlayaLosCob"
+                android:layout_width="204dp"
+                android:layout_height="83dp"
+                android:layout_below="@id/TituloPlayaLosCob"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="23dp"
+                android:text="Los Cóbanos es una pequeña comunidad de pescadores en la costa del occidental departamento de Sonsonate, ubicada a 11 kilómetros al oriente del municipio y Puerto de Acajutla"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imgPlayaMizata"
+                android:layout_width="149dp"
+                android:layout_height="134dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/imgPlayaLosCob"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/playamizata" />
+            <TextView
+                android:id="@+id/TituloPlayaMizata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PLAYA MIZATA"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_below="@id/DescriptionPlayaLosCob"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="170dp"/>
+
+            <TextView
+                android:id="@+id/DescriptionPlayaSurf"
+                android:layout_width="205dp"
+                android:layout_height="83dp"
+                android:layout_below="@id/TituloPlayaMizata"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="23dp"
+                android:text="Ubicada entre las playas de El Zonte y Los Cóbanos, playa Mizata se considera una de las más bellas de la zona. Sus aguas cristalinas y calientes, su fácil acceso y sus maravillosos paisajes la convierten en destino extraordinario.
+La playa está dividida en dos por un rompeolas. A un lado, encontrarás una larga playa de arena; al otro, un excepcional emplazamiento para la práctica del surf."
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

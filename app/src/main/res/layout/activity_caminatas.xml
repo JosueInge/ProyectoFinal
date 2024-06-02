@@ -5,17 +5,157 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondomenu"
-    tools:context=".MiradoresActivity">
+    tools:context=".CaminatasActivity">
 
-    <TextView
-        android:id="@+id/lblCaminatas"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/VolverCaminatas"
         android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_marginLeft="140dp"
-        android:text="CAMINATAS"
-        android:textColor="@color/white"
-        android:layout_marginTop="10dp"
-        android:textSize="25dp"
-        android:textStyle="bold" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@android:drawable/ic_menu_revert"
+        app:backgroundTint="#00BCD4" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblCaminatas"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="140dp"
+                android:text="SENDERISMO"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/RutaDePaz"
+                android:layout_width="126dp"
+                android:layout_height="130dp"
+                android:layout_below="@id/lblCaminatas"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rutapaz" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RUTA DE PAZ"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_below="@id/lblCaminatas"
+                android:layout_marginLeft="170dp"/>
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="204dp"
+                android:layout_height="83dp"
+                android:layout_below="@id/lblCaminatas"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="23dp"
+                android:text="Ruta de Paz incorpora a los 26 municipios del departamento de Morazán, organizados en seis circuitos turísticos intermunicipales; su nombre es una alusión al período de paz en que viven estos pueblos después de la guerra civil de los años 80 y la tranquilidad que caracteriza a la zona."
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/Ruta"
+                android:layout_width="126dp"
+                android:layout_height="130dp"
+                android:layout_below="@id/lblCaminatas"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="140dp"
+                android:background="@drawable/rutaflores"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblCaminatas"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="135dp"
+                android:text="RUTA LAS FLORES"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/descriptionflores"
+                android:layout_width="wrap_content"
+                android:layout_height="89dp"
+                android:layout_below="@id/lblCaminatas"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="160dp"
+                android:text="El clima de esta región es fresco siendo esta una de las razones principales que tanto viajeros nacionales como internacionales buscan este destino.
+
+Tradiciones locales, una importante cultura del café, actividades de aventura, delicioses restaurantes y mercados locales son algunos de los atractivos que podrás disfrutar en la zona."
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/RutaFlores"
+                android:layout_width="126dp"
+                android:layout_height="130dp"
+                android:layout_below="@id/lblCaminatas"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="294dp"
+                android:background="@drawable/rutadelasflores"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblCaminatas"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="295dp"
+                android:text="VOLCAN SANTA ANA"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/descriptionsantaana"
+                android:layout_width="220dp"
+                android:layout_height="87dp"
+                android:layout_below="@id/lblCaminatas"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="318dp"
+                android:text="cuyo nombre indígena proviene de la palabra náhuat Ilamatepet y significa: 'el cerro de la anciana', es un estratovolcán ubicado en el departamento de Santa Ana que tiene una elevación de 2.381 m s. n. m.; por lo que es el volcán más alto de El Salvador.​"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/ImgElImporible"
+                android:layout_width="126dp"
+                android:layout_height="130dp"
+                android:layout_below="@id/lblCaminatas"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="439dp"
+                android:background="@drawable/elpital"/>
+            <TextView
+                android:id="@+id/ElImposible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblCaminatas"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="439dp"
+                android:text="EL IMPOSIBLE"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/descriptionElImpo"
+                android:layout_width="215dp"
+                android:layout_height="101dp"
+                android:layout_below="@id/lblCaminatas"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="466dp"
+                android:text="El Imposible es una selva, en partes tropical y en otras sub-tropical. Ubicada sobre la Sierra de Apaneca-Ilamatepeque, posee la mayor biodiversidad en el país como parte de un bosque maduro, típico de los inicios de Mesoamérica."
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

@@ -7,6 +7,38 @@
     android:background="@color/cardview_dark_background"
     tools:context=".ContratoActivity">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnVolverMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@android:drawable/ic_menu_revert" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="90dp"
+        android:src="@android:drawable/stat_notify_chat"
+        app:backgroundTint="#00BCD4" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
     <TextView
         android:id="@+id/lblContrato"
         android:layout_width="336dp"
@@ -18,27 +50,15 @@
         android:textSize="25dp"
         android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/imgCont"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/lblContrato"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginRight="165dp"
-        android:src="@android:drawable/ic_menu_camera" />
 
     <EditText
         android:id="@+id/txtGuia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imgCont"
+        android:layout_below="@+id/lblContrato"
         android:hint="Guia"
         android:textColor="@color/white"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="40dp"
         android:textColorHint="@color/white"
         android:textSize="20dp"
         android:inputType="text" />
@@ -95,18 +115,20 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtTiempo"
         android:layout_marginLeft="90dp"
+        android:layout_marginTop="20dp"
         android:text="Guardar" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnVolverLista"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="212dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="15dp"
+        android:layout_below="@+id/btnGuardarCont"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:src="@android:drawable/ic_menu_edit"
-        app:backgroundTint="#1565C0" />
+        android:layout_marginLeft="90dp"
+        android:text="Lista de Contratos" />
+</RelativeLayout>
+</ScrollView>
+
+
+
 </RelativeLayout>

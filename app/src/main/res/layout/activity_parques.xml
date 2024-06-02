@@ -5,7 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondomenu"
-    tools:context=".MiradoresActivity">
+    tools:context=".ParquesActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/VolverParques"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@android:drawable/ic_menu_revert"
+        app:backgroundTint="#00BCD4" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <TextView
         android:id="@+id/lblParques"
@@ -17,5 +36,130 @@
         android:layout_marginTop="10dp"
         android:textSize="25dp"
         android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/Imgparques"
+        android:layout_width="142dp"
+        android:layout_height="136dp"
+        android:layout_below="@id/lblParques"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/parquecuscatlan" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PARQUE CUSCATLAN"
+        android:textStyle="bold"
+
+        android:textColor="@color/white"
+        android:layout_below="@id/lblParques"
+        android:layout_marginLeft="170dp"/>
+    <TextView
+        android:id="@+id/descriptionparquecuscatlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El Parque Cuscatlán está localizado en la ciudad de San Salvador, El Salvador. El área comprende sitios de interés como el Museo Tin Marín, la Sala Nacional de Exposiciones Salarrue y el Monumento a la Memoria y la Verdad"
+        android:textColor="@color/white"
+        android:layout_below="@id/lblParques"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="170dp"/>
+
+    <ImageView
+        android:id="@+id/imgparque"
+        android:layout_width="139dp"
+        android:layout_height="112dp"
+        android:layout_below="@id/Imgparques"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/parquelafamilia"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Imgparques"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="19dp"
+        android:text="PARQUE DE LA FAMILIA"
+        android:textStyle="bold"
+
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/descriptionfamilia"
+
+        android:layout_width="241dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/descriptionparquecuscatlan"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="69dp"
+        android:text="El Parque de la Familia, en el departamento de La Unión, se ha convertido en un símbolo de orgullo para sus habitantes. Esta construcción forma parte de sus principales atractivos turísticos,"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/imgbicentenario"
+        android:layout_width="139dp"
+        android:layout_height="112dp"
+        android:layout_below="@id/Imgparques"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="167dp"
+        android:background="@drawable/parquebicentenario"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblParques"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="329dp"
+        android:text="PARQUE BICENTENARIO"
+        android:textStyle="bold"
+
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/descriptionbicentenario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblParques"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="354dp"
+        android:text="El Parque del Bicentenario es un parque arbolado en El Salvador que abarca los municipios de San Salvador y Antiguo Cuscatlán, en El Salvador."
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/parquecentral"
+        android:layout_width="142dp"
+        android:layout_height="136dp"
+        android:layout_below="@id/lblParques"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="454dp"
+        android:background="@drawable/parqueraulfrancisco" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblParques"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="444dp"
+        android:text="PARQUE CENTRAL RAUL FRANCISCO MUNGUIA"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/descriptioncentral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblParques"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="486dp"
+        android:text="Parque Raúl Francisco Munguía es un parque en Departamento de Usulután, El Salvador. Parque Raúl Francisco Munguía está situada circa de la iglesia Parroquia Santa Catarina de Alejandria y Iglesia Catolica Santa Catarina."
+
+        android:textColor="@color/white" />
+    </RelativeLayout>
+</ScrollView>
+
 
 </RelativeLayout>

@@ -56,9 +56,6 @@ public class adaptadorImagenes extends BaseAdapter {
             tempVal = itemView.findViewById(R.id.lblPersonas);
             tempVal.setText(misContratos.getTelefono());
 
-            ImageView imgView = itemView.findViewById(R.id.imgFoto);
-            Bitmap bitmap = BitmapFactory.decodeFile(misContratos.getFoto());
-            imgView.setImageBitmap(bitmap);
         }catch (Exception e){
             Toast.makeText(context, "Error al mostrar datos: "+e.getMessage(), Toast.LENGTH_LONG).show();
         }

@@ -5,17 +5,191 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondomenu"
-    tools:context=".MiradoresActivity">
+    tools:context=".HotelesActivity">
 
-    <TextView
-        android:id="@+id/lblHoteles"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/VolverHoteles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:text="HOTELES"
-        android:textColor="@color/white"
-        android:layout_marginTop="10dp"
-        android:textSize="25dp"
-        android:textStyle="bold" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@android:drawable/ic_menu_revert"
+        app:backgroundTint="#00BCD4" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblHoteles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:text="HOTELES"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/HotelDecameron"
+                android:layout_width="142dp"
+                android:layout_height="136dp"
+                android:layout_below="@id/lblHoteles"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/hoteldecam"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOTEL DECAMERON"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:layout_below="@id/lblHoteles"
+                android:layout_marginLeft="170dp"/>
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="216dp"
+                android:layout_height="115dp"
+                android:layout_below="@id/lblHoteles"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="30dp"
+                android:text="El Hotel Royal Decameron Salinitas le ofrecemos el más sorprendente y completo Centro de Convenciones conformado por 3 Grandes Salones con capacidad de hasta 2000 personas, equipados con la más alta tecnología que le garantiza un rotundo éxito en sus reuniones empresariales, con todas las ventajas de nuestro Resort."
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/hotelsevilla"
+                android:layout_width="145dp"
+                android:layout_height="119dp"
+                android:layout_below="@id/lblHoteles"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="178dp"
+                android:background="@drawable/hotelsevilla" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblHoteles"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="167dp"
+                android:text="HOTEL SEVILLA"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/descriptionhotelsevilla"
+                android:layout_width="199dp"
+                android:layout_height="102dp"
+                android:layout_below="@id/lblHoteles"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="190dp"
+                android:text="Km 114 Carretera Litoral, Santa María, Usulután Usulutan Acerca de este hotel
+Hora de registro de entrada: 3:00 p.m.
+Hora de registro de salida: 1:00 p.m."
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/hotelPatocanales"
+                android:layout_width="145dp"
+                android:layout_height="119dp"
+                android:layout_below="@id/lblHoteles"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="309dp"
+                android:background="@drawable/patocanales" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descriptionhotelsevilla"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="30dp"
+                android:text="HOTEL PATO CANALES"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/descriptionpatocanales"
+                android:layout_width="220dp"
+                android:layout_height="103dp"
+                android:layout_below="@id/lblHoteles"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="340dp"
+                android:text="Pato Canales Hotel  fue fundado en el año 1977 bajo el concepto de restaurante de campo. A través de los años, se han desarrollado nuevos proyectos, como la construcción de un hotel que consta de lujosas, amplias y cómodas habitaciones, y la construcción de un moderno parque acuático."
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/hoteleltejadosuchitoto"
+                android:layout_width="145dp"
+                android:layout_height="119dp"
+                android:layout_below="@id/lblHoteles"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="460dp"
+                android:background="@drawable/hoteleltejado"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblHoteles"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="459dp"
+                android:text="HOTEL EL TEJADO"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/descriptionhoteltejado"
+                android:layout_width="220dp"
+                android:layout_height="103dp"
+                android:layout_below="@id/lblHoteles"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="476dp"
+                android:text="El Tejado está en Suchitoto y tiene jardín, terraza, restaurante y wifi gratis. El hotel dispone de habitaciones familiares.
+
+En el hotel, las habitaciones están equipadas con armario. Todas las habitaciones del alojamiento disponen de baño privado con ducha, TV de pantalla plana y aire acondicionado. Algunas de las habitaciones incluyen balcón. En El Tejado, cada habitación dispone de ropa de cama y toallas.
+
+El aeropuerto (Aeropuerto internacional de El Salvador) está a 69 km."
+                android:textColor="@color/white" />
+
+
+            <ImageView
+                android:id="@+id/hoteltinn"
+                android:layout_width="149dp"
+                android:layout_height="118dp"
+                android:layout_below="@id/hoteleltejadosuchitoto"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="202dp"
+                android:background="@drawable/hoteltropicoinn" />
+            <TextView
+                android:id="@+id/lblHotelInn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descriptionhoteltejado"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="20dp"
+                android:text="HOTEL TROPICO INN"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descriptionhotelsanbenito"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblHotelInn"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="17dp"
+          android:text="El Hotel Tropico Inn, situado en San Miquel, cuenta con una piscina al aire libre y un restaurante. Además, ofrece conexión WiFi y aparcamiento privado gratuitos.
+
+Todas las habitaciones incluyen TV por cable, aire acondicionado, escritorio y baño privado con bañera o ducha y artículos de aseo gratuitos.
+
+El Hotel Tropico Inn tiene recepción abierta las 24 horas, jardín y terraza. El establecimiento también cuenta con discoteca, instalaciones para reuniones y tiendas."
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

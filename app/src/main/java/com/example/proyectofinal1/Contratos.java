@@ -7,23 +7,14 @@ public class Contratos {
     String personas;
     String destino;
     String tiempo;
-    String foto;
-    public Contratos(String idContrato, String guia, String telefono, String personas, String destino, String tiempo, String foto) {
+
+    public Contratos(String idContrato, String guia, String telefono, String personas, String destino, String tiempo) {
         this.idContrato = idContrato;
         this.guia = guia;
         this.telefono = telefono;
         this.personas = personas;
         this.destino = destino;
         this.tiempo = tiempo;
-        this.foto = foto;
-    }
-
-    public String getFoto() {
-        return foto;
-    }
-
-    public void setFoto(String foto) {
-        this.foto = foto;
     }
 
     public String getIdContrato() {

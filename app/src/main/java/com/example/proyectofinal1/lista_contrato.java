@@ -45,8 +45,8 @@ public class lista_contrato extends AppCompatActivity {
                     abrirActividad(parametros);
                 }
             });
-            obtenerAmigos();
-            buscarAmigos();
+            obtenerContratos();
+            buscarContratos();
         }
         @Override
         public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
@@ -56,7 +56,7 @@ public class lista_contrato extends AppCompatActivity {
 
             AdapterView.AdapterContextMenuInfo info =(AdapterView.AdapterContextMenuInfo)menuInfo;
             cContratos.moveToPosition(info.position);
-            menu.setHeaderTitle(cContratos.getString(1));//1 es el nombre del amigo
+            menu.setHeaderTitle(cContratos.getString(1));
         }
         @Override
         public boolean onContextItemSelected(@NonNull MenuItem item) {
@@ -67,7 +67,7 @@ public class lista_contrato extends AppCompatActivity {
                         abrirActividad(parametros);
                         break;
                     case R.id.mnxModificar:
-                        String amigos[] = {
+                        String contrato[] = {
                                 cContratos.getString(0), //idAmigo
                                 cContratos.getString(1), //nombre
                                 cContratos.getString(2), //direccion
@@ -77,11 +77,11 @@ public class lista_contrato extends AppCompatActivity {
                                 cContratos.getString(6)  //foto
                         };
                         parametros.putString("accion","modificar");
-                        parametros.putStringArray("amigos", amigos);
+                        parametros.putStringArray("contratos", contrato);
                         abrirActividad(parametros);
                         break;
                     case R.id.mnxEliminar:
-                        eliminarAmigos();
+                        eliminarContratos();
                         break;
                 }
                 return true;
@@ -90,7 +90,7 @@ public class lista_contrato extends AppCompatActivity {
                 return super.onContextItemSelected(item);
             }
         }
-        private void eliminarAmigos(){
+        private void eliminarContratos(){
             try {
                 AlertDialog.Builder confirmacion = new AlertDialog.Builder(lista_contrato.this);
                 confirmacion.setTitle("Esta seguro de Eliminar a: ");
@@ -100,10 +100,10 @@ public class lista_contrato extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         String respuesta = dbContratos.administrar_contratos("eliminar", new String[]{cContratos.getString(0)});
                         if (respuesta.equals("ok")) {
-                            mostrarMsg("Amigo eliminado con exito.");
-                            obtenerAmigos();
+                            mostrarMsg("Contrato eliminado con exito.");
+                            obtenerContratos();
                         } else {
-                            mostrarMsg("Error al eliminar amigo: " + respuesta);
+                            mostrarMsg("Error al eliminar el contrato: " + respuesta);
                         }
                     }
                 });
@@ -119,11 +119,11 @@ public class lista_contrato extends AppCompatActivity {
             }
         }
         private void abrirActividad(Bundle parametros){
-            Intent abriVentana = new Intent(getApplicationContext(), MainActivity.class);
+            Intent abriVentana = new Intent(getApplicationContext(), HomeActivity.class);
             abriVentana.putExtras(parametros);
             startActivity(abriVentana);
         }
-        private void obtenerAmigos(){
+        private void obtenerContratos(){
             try{
                 alContratos.clear();
                 alContratosCopy.clear();
@@ -135,13 +135,12 @@ public class lista_contrato extends AppCompatActivity {
                     lts = findViewById(R.id.ltsAmigos);
                     do{
                         misContratos = new Contratos(
-                                cContratos.getString(0),//idAmigo
-                                cContratos.getString(1),//nombre
-                                cContratos.getString(2),//direccion
-                                cContratos.getString(3),//tel
-                                cContratos.getString(4),//email
-                                cContratos.getString(5),//dui
-                                cContratos.getString(6) //foto
+                                cContratos.getString(0),
+                                cContratos.getString(1),
+                                cContratos.getString(2),
+                                cContratos.getString(3),
+                                cContratos.getString(4),
+                                cContratos.getString(5)
                         );
                         alContratos.add(misContratos);
                     }while(cContratos.moveToNext());
@@ -161,7 +160,7 @@ public class lista_contrato extends AppCompatActivity {
         private void mostrarMsg(String msg){
             Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
         }
-        private void buscarAmigos(){
+        private void buscarContratos(){
             TextView tempVal;
             tempVal = findViewById(R.id.txtBuscarAmigos);
             tempVal.addTextChangedListener(new TextWatcher() {

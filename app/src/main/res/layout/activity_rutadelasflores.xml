@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoinfo"
+    tools:context=".RutadelasfloresActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/VolverMenuMr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/home"
+        app:backgroundTint="#00BCD4" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/UbicacionFinca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="90dp"
+        android:src="@android:drawable/ic_dialog_map"
+        app:backgroundTint="#9BF8CC" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lblTituloMirador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="RUTA DE LAS FLORES"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgMiradorC"
+                android:layout_width="360dp"
+                android:layout_height="203dp"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/lblTituloMirador"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rutadelasflores" />
+
+            <ImageView
+                android:id="@+id/fondotext1"
+                android:layout_width="415dp"
+                android:layout_height="142dp"
+                android:layout_below="@+id/imgMiradorC"
+                android:layout_marginLeft="01dp"
+                android:layout_marginTop="20dp"
+                android:background="#066E64" />
+
+            <TextView
+                android:id="@+id/lblinformacionMr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgMiradorC"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="La Ruta de las Flores es una encantadora travesía sobre la cordillera Apaneca- Ilamatepeq entre los departamentos de Ahuachapán y Sonsonate en el occidente de El Salvador, agradable clima fresco, sitios impregnados de tradiciones e historia, una peculiar gastronomía y variedad de hostales y pequeños hoteles que harán de su estadía un colorido recuerdo de su paso por El Salvador."
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgMiradorMr2"
+                android:layout_width="360dp"
+                android:layout_height="203dp"
+                android:layout_below="@+id/lblinformacionMr"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/rutadelasflores2" />
+
+            <ImageView
+                android:id="@+id/fondotext2"
+                android:layout_width="410dp"
+                android:layout_height="156dp"
+                android:layout_below="@+id/imgMiradorMr2"
+                android:layout_marginLeft="01dp"
+                android:layout_marginTop="20dp"
+                android:background="#066E64" />
+            <TextView
+                android:id="@+id/lblUbicacionMr"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgMiradorMr2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="21dp"
+                android:text="En el Occidente del país se encuentran montañas y elevaciones importantes sobre el nivel del mar, entre ellas se destaca la Cordillera Apaneca-Ilamatepec, cuya parte más alta alcanza los 2,381 mts. En una buena parte de estas elevaciones se ubican seis municipios: Ahuachapán, Concepción de Ataco, Apaneca, Juayúa, Salcoatitán y Nahuizalco, los cuales se comunican por una carretera a la que se le llamó “Ruta de Las Flores”."
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgMiradorMr4"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:layout_below="@+id/lblUbicacionMr"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="20dp"
+                android:background="#066E64" />
+
+            <TextView
+                android:id="@+id/lblTarifa"
+                android:layout_width="375dp"
+                android:layout_height="129dp"
+                android:layout_below="@+id/lblUbicacionMr"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="La Ruta de Las Flores está impregnada de mucha historia, con la participación de personajes e instituciones que han tenido relevantes actuaciones para alcanzar el reconocimiento de la población de El Salvador y la afluencia del turismo internacional.
+Una Ruta Turística es la integración de los diferentes espacios turísticos a través del manejo de recorridos turísticos con la interpretación de elementos tales como actividades productivas, atractivos paisajísticos u otro atractivo que permita ofrecer una experiencia de calidad con un manejo creativo de los recursos existentes (áreas naturales, artesanías, atractivos especiales, tradiciones, gastronomía, entre otros)."
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

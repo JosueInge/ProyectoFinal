@@ -2,8 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.proyectofinal1">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +14,42 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal1">
+        <activity
+            android:name=".ParquecuscActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HoteldecamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ElimposibleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VolcanstaanaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RutadelasfloresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RutadepazActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TermalesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AtlantisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TermosdrActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoschorrosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PuertaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MiradormanoActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -27,13 +65,13 @@
         <activity android:name=".PlazasActivity" />
         <activity android:name=".BalneariosActivity" />
         <activity android:name=".CaminatasActivity" />
-        <activity android:name=".CinesActivity" />
+        <activity android:name=".TirolinasActivity" />
         <activity android:name=".ParquesActivity" />
         <activity android:name=".RuinasActivity" />
         <activity android:name=".HotelesActivity" />
-        <activity android:name=".RestaurantesActivity" />
         <activity android:name=".ContratoActivity" />
         <activity android:name=".lista_contrato" />
+        <activity android:name=".FincaraudActivity" />
     </application>
 
 </manifest>

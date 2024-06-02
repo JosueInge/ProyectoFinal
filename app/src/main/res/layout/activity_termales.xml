@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoinfo"
+    tools:context=".TermalesActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/VolverMenuMr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/home"
+        app:backgroundTint="#00BCD4" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/UbicacionFinca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="90dp"
+        android:src="@android:drawable/ic_dialog_map"
+        app:backgroundTint="#9BF8CC" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lblTituloMirador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="TERMALES DE SANTA TEREZA"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgMiradorC"
+                android:layout_width="360dp"
+                android:layout_height="203dp"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/lblTituloMirador"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/termales1" />
+
+            <ImageView
+                android:id="@+id/fondotext1"
+                android:layout_width="410dp"
+                android:layout_height="207dp"
+                android:layout_below="@+id/imgMiradorC"
+                android:layout_marginLeft="01dp"
+                android:layout_marginTop="20dp"
+                android:background="#066E64" />
+
+            <TextView
+                android:id="@+id/lblinformacionMr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgMiradorC"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Las aguas termales, el barro mineral, caolinita y el vapor mineral de Santa Teresa, son reconocidos desde hace más de 100 años por sus múltiples propiedades curativas y efectos positivos en el mejoramientos de su salud."
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/lblinformacionMr1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblinformacionMr"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Ofrecen tours al Ausol Santa Teresa, el ausol más grande de Centroamérica, al lago de los patios, las diferentes piscinas y al Lago Azul. Además, ofrecen la oportunidad de andar en bicicleta.
+Cuentan con 4 cabañas con piscinas privadas y cabañas cerca de las piscinas del Resort. Las cabañas cuentan con dos a 4 habitaciones."
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgMiradorMr2"
+                android:layout_width="360dp"
+                android:layout_height="203dp"
+                android:layout_below="@+id/lblinformacionMr1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/termales2" />
+
+            <ImageView
+                android:id="@+id/fondotext2"
+                android:layout_width="410dp"
+                android:layout_height="74dp"
+                android:layout_below="@+id/imgMiradorMr2"
+                android:layout_marginLeft="01dp"
+                android:layout_marginTop="20dp"
+                android:background="#066E64" />
+            <TextView
+                android:id="@+id/lblUbicacionMr"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgMiradorMr2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="21dp"
+                android:text="Las tarifas son por persona; para las cabañas con piscinas privadas es de $75.00 y de $65.00 para las demás cabañas. Incluye cena, desayuno, uso de las piscinas y Spa."
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgMiradorMr3"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_below="@+id/fondotext2"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="20dp"
+                android:background="#066E64" />
+            <TextView
+                android:id="@+id/lblTarifa"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fondotext2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:text="El Spa es un área de mucha atracción, consiste en aplicar el barro mineral en el cuerpo y caolinita en la cara, entrar al sauna o temazcal calentados con vapor de ausol; luego de 15 minutos, los poros se dilatan y los minerales pueden penetrar en su piel, luego pasan a una piscina azufrada para exfoliar los minerales, quedando su piel tersa y suave."
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

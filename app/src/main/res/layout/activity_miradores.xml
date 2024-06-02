@@ -7,6 +7,25 @@
     android:background="@drawable/fondomenu"
     tools:context=".MiradoresActivity">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/VolverMiradores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@android:drawable/ic_menu_revert"
+        app:backgroundTint="#00BCD4" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
     <TextView
         android:id="@+id/lblMiradores"
         android:layout_width="wrap_content"
@@ -18,4 +37,92 @@
         android:textSize="25dp"
         android:textStyle="bold" />
 
+    <ImageButton
+        android:id="@+id/fincarauda"
+        android:layout_width="142dp"
+        android:layout_height="136dp"
+        android:layout_below="@id/lblMiradores"
+        android:background="@drawable/fincarauda"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MIRADOR DE CRISTAL"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@id/lblMiradores"
+        android:layout_marginLeft="170dp"/>
+    <TextView
+        android:id="@+id/descriptionfincarauda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubicado en el municipio de Alegría, Usulután, el atractivo turístico ha llamado la atención de decenas de salvadoreños que no se han quedado con la curiosidad de caminar sobre una estructura hecha de cristal, haciéndolos sentir como si estuvieran en el aire."
+        android:textColor="@color/white"
+        android:layout_below="@id/lblMiradores"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="170dp"/>
+
+    <ImageButton
+        android:id="@+id/imgPuerta"
+        android:layout_width="139dp"
+        android:layout_height="112dp"
+        android:layout_below="@id/fincarauda"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/puertadeldiablo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PUERTA DEL DIABLO"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/fincarauda"/>
+    <TextView
+        android:id="@+id/descriptionpuerta"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Se encuentra ubicado en Calle a Mil Cumbres, cantón el Cedro, Municipio de Panchimalco y Departamento de San Salvador
+
+Horario: De Lunes a Domingo de 8:00 a.m. a 10:00 p.m. "
+        android:textColor="@color/white"
+        android:layout_below="@id/descriptionfincarauda"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="170dp"/>
+
+
+        <ImageButton
+            android:id="@+id/imgMiradorMano"
+            android:layout_width="142dp"
+            android:layout_height="136dp"
+            android:layout_below="@id/imgPuerta"
+            android:background="@drawable/miradordemano"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:id="@+id/miradorMano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="MIRADOR DE MANO"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_below="@id/descriptionpuerta"
+            android:layout_marginLeft="170dp"/>
+        <TextView
+            android:id="@+id/descriptionmiradormano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:text="Mirador Paradise es una de las nuevas apuestas turísticas de la zona oriental del país. Desde hace algunos meses, este destino de Berlín Usulután se ha popularizado por su increíble vista.
+Este nuevo destino turístico es ideal para los amantes de la fotografía. Aproximadamente a dos horas de San Salvador y a 1,325 metros sobre el nivel del mar se encuentra uno de los miradores más creativos de El Salvador, su nombre es Mirador Paradise y está ubicado en Berlín, Usulután"
+            android:textColor="@color/white"
+            android:layout_below="@id/miradorMano"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="170dp"/>
+
+</RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

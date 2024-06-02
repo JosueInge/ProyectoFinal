@@ -8,22 +8,24 @@ import android.view.View;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class ParquesActivity extends AppCompatActivity {
-FloatingActionButton VolverParques;
+public class TirolinasActivity extends AppCompatActivity {
+    FloatingActionButton Volvertirolinas;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_parques);
+        setContentView(R.layout.activity_tirolinas);
 
-        VolverParques = findViewById(R.id.VolverParques);
-        VolverParques.setOnClickListener(new View.OnClickListener() {
+        Volvertirolinas = findViewById(R.id.Volvertirolinas);
+        Volvertirolinas.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {VolverHomeParques();
-
+            public void onClick(View view) {
+                VolverHomeRuinas();
             }
         });
     }
-    public void VolverHomeParques(){
+
+    public void VolverHomeRuinas() {
         Intent abrirVentana = new Intent(getApplicationContext(), HomeActivity.class);
         startActivity(abrirVentana);
     }

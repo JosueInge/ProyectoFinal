@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondomenu"
+    tools:context=".TirolinasActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Volvertirolinas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@android:drawable/ic_menu_revert"
+        app:backgroundTint="#00BCD4" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblTirolinas"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:text="TIROLINAS y TOBOGANES"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgAlbania"
+                android:layout_width="149dp"
+                android:layout_height="134dp"
+                android:layout_below="@+id/lblTirolinas"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/cafealbania" />
+            <TextView
+                android:id="@+id/lblAlbania"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CAFE ALBANIA"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_below="@id/lblTirolinas"
+                android:layout_marginLeft="170dp"/>
+            <TextView
+                android:id="@+id/AlbaniaDescription"
+                android:layout_width="204dp"
+                android:layout_height="83dp"
+                android:layout_below="@id/lblAlbania"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="23dp"
+android:text="Vive la experiencia de montar bicicleta y tabla de surf por los aires (apróximadamente 30mts. de altura) sobre cables y con todas las medidas de seguridad. O donde puedes practicar Rapel con diferentes niveles de dificultad dependiendo de la distancia."
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imgPicnic"
+                android:layout_width="149dp"
+                android:layout_height="134dp"
+                android:layout_below="@+id/imgAlbania"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/picnic" />
+            <TextView
+                android:id="@+id/lblPicnic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EL BOQUERON"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"
+                android:textColor="@color/white"
+                android:layout_below="@id/AlbaniaDescription"
+                android:layout_marginLeft="170dp"/>
+            <TextView
+                android:id="@+id/PicnicDescription"
+                android:layout_width="204dp"
+                android:layout_height="83dp"
+                android:layout_below="@id/lblPicnic"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="23dp"
+                android:text="¡Descubre Imagine Slide! Ubicado en km 16 Calle al Boquerón.
+Los horarios del Imagine Slide son de lunes a viernes de 11 30am a 5pm y sábado y domingo de 8am a 5pm."
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

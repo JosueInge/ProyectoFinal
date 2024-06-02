@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoinfo"
+    tools:context=".MiradormanoActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/VolverMenuMr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/home"
+        app:backgroundTint="#00BCD4" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lblTituloMiradorMano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="MIRADOR DE LAS CIEN GRADAS"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgMiradorC"
+                android:layout_width="360dp"
+                android:layout_height="203dp"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/lblTituloMiradorMano"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/miradorcien" />
+
+            <ImageView
+                android:id="@+id/fondotext1"
+                android:layout_width="410dp"
+                android:layout_height="109dp"
+                android:layout_below="@+id/imgMiradorC"
+                android:layout_marginLeft="01dp"
+                android:layout_marginTop="20dp"
+                android:background="#066E64" />
+
+            <TextView
+                android:id="@+id/lblinformacionMr"
+                android:layout_width="401dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgMiradorC"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="El Mirador de las Cien Gradas es un destino que tienes que conocer. Aquí podrás disfrutar un clima perfecto y tomar las mejores fotografías de la zona. Ubicado en el municipio de Alegría, en el departamento de Usulután, este mirador se ha convertido en el lugar ideal para tener la selfie que todos van a amar."
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgMiradorMr2"
+                android:layout_width="360dp"
+                android:layout_height="203dp"
+                android:layout_below="@+id/lblinformacionMr"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/miradorcien2" />
+
+            <ImageView
+                android:id="@+id/fondotext2"
+                android:layout_width="410dp"
+                android:layout_height="86dp"
+                android:layout_below="@+id/imgMiradorMr2"
+                android:layout_marginLeft="01dp"
+                android:layout_marginTop="20dp"
+                android:background="#066E64" />
+            <TextView
+                android:id="@+id/lblUbicacionMr"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgMiradorMr2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="21dp"
+                android:text="En la travesía hasta su punto más alto, las gradas se visten de hermosos colores que hacen este recorrido más divertido. La fotografía es única y especial de principio a fin. ¿Te animas a subir?"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgMiradorMr3"
+                android:layout_width="173dp"
+                android:layout_height="168dp"
+                android:layout_below="@+id/lblUbicacionMr"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/miradorcristal3" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

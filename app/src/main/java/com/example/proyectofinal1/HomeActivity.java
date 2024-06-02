@@ -6,6 +6,8 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageButton;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -17,17 +19,16 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Button btnMiradores = findViewById(R.id.btnmiradores);
-        Button btnPlayas = findViewById(R.id.btnPlayas);
-        Button btnBalnearios = findViewById(R.id.btnBalnearios);
-        Button btnPlazas = findViewById(R.id.btnPlazas);
-        Button btnCaminatas = findViewById(R.id.btnCaminatas);
-        Button btnParques = findViewById(R.id.btnParques);
-        Button btnCines = findViewById(R.id.btnCines);
-        Button btnArqueologos = findViewById(R.id.btnArqueologos);
-        Button btnHoteles = findViewById(R.id.btnHoteles);
-        Button btnRestaurant = findViewById(R.id.btnRestaurant);
-        Button btnTransporte = findViewById(R.id.btnTransporte);
+        ImageButton btnMiradores = findViewById(R.id.btnMiradores);
+        ImageButton btnPlayas = findViewById(R.id.btnPlayas);
+        ImageButton btnBalnearios = findViewById(R.id.btnBalnearios);
+        ImageButton btnPlazas = findViewById(R.id.btnPlazas);
+        ImageButton btnSenderismo = findViewById(R.id.btnSenderismo);
+        ImageButton btnHoteles = findViewById(R.id.btnHoteles);
+        ImageButton btnTirolinas = findViewById(R.id.btnTirolinas);
+        ImageButton btnParquess = findViewById(R.id.btnParquess);
+        ImageButton btnArqueologos = findViewById(R.id.btnArqueologos);
+        ImageButton btnTransporte = findViewById(R.id.btnTransporte);
         FloatingActionButton btnCerraSesion = findViewById(R.id.btnCerrarSesion);
 
         btnMiradores.setOnClickListener(v -> {
@@ -43,19 +44,19 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
         });
         btnPlazas.setOnClickListener(v -> {
-            Intent intent = new Intent(HomeActivity.this, PlayasActivity.class);
+            Intent intent = new Intent(HomeActivity.this, PlazasActivity.class);
             startActivity(intent);
         });
-        btnCaminatas.setOnClickListener(v -> {
+        btnSenderismo.setOnClickListener(v -> {
             Intent intent = new Intent(HomeActivity.this, CaminatasActivity.class);
             startActivity(intent);
         });
-        btnParques.setOnClickListener(v -> {
-            Intent intent = new Intent(HomeActivity.this, ParquesActivity.class);
+        btnTirolinas.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, TirolinasActivity.class);
             startActivity(intent);
         });
-        btnCines.setOnClickListener(v -> {
-            Intent intent = new Intent(HomeActivity.this, CinesActivity.class);
+        btnParquess.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, ParquesActivity.class);
             startActivity(intent);
         });
         btnArqueologos.setOnClickListener(v -> {
@@ -66,10 +67,7 @@ public class HomeActivity extends AppCompatActivity {
             Intent intent = new Intent(HomeActivity.this, HotelesActivity.class);
             startActivity(intent);
         });
-        btnRestaurant.setOnClickListener(v -> {
-            Intent intent = new Intent(HomeActivity.this, RestaurantesActivity.class);
-            startActivity(intent);
-        });
+
         btnTransporte.setOnClickListener(v -> {
             Intent intent = new Intent(HomeActivity.this, ContratoActivity.class);
             startActivity(intent);

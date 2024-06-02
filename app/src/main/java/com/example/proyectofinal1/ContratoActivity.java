@@ -25,25 +25,17 @@ import java.util.Date;
 
 public class ContratoActivity extends AppCompatActivity {
     TextView tempVal;
-    Button btn;
-    FloatingActionButton btnVolverLista;
+    Button btn, btbEditar;
+    FloatingActionButton VolverMenu;
     String accion="nuevo", id="", urlCompletaImg="";
-    Intent tomarFotoIntent;
     ImageView img;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contrato);
 
-        img = findViewById(R.id.imgCont);
-        img.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tomarFotoAmigo();
-            }
-        });
-        btnVolverLista = findViewById(R.id.btnVolverLista);
-        btnVolverLista.setOnClickListener(new View.OnClickListener() {
+        btbEditar = findViewById(R.id.btnEditar);
+        btbEditar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 volverListaContratos();
@@ -95,37 +87,7 @@ public class ContratoActivity extends AppCompatActivity {
             mostrarMsg("Error al mostrar la camara: "+ e.getMessage());
         }
     }
-    private void tomarFotoAmigo(){
-        tomarFotoIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        //if( tomarFotoIntent.resolveActivity(getPackageManager())!=null ){
-        File fotoAmigo = null;
-        try{
-            fotoAmigo = crearImagenAmigo();
-            if( fotoAmigo!=null ){
-                Uri uriFotoAmigo = FileProvider.getUriForFile(ContratoActivity.this, "com.ugb.controlesbasicos.fileprovider", fotoAmigo);
-                tomarFotoIntent.putExtra(MediaStore.EXTRA_OUTPUT, uriFotoAmigo);
-                startActivityForResult(tomarFotoIntent, 1);
-            }else{
-                mostrarMsg("NO pude tomar la foto");
-            }
-        }catch (Exception e){
-            mostrarMsg("Error al tomar la foto: "+ e.getMessage());
-        }
-        /*}else{
-            mostrarMsg("No se selecciono una foto...");
-        }*/
-    }
-    private File crearImagenAmigo() throws Exception{
-        String fechaHoraMs = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        String fileName = "imagen_"+ fechaHoraMs +"_";
-        File dirAlmacenamiento = getExternalFilesDir(Environment.DIRECTORY_DCIM);
-        if( !dirAlmacenamiento.exists() ){
-            dirAlmacenamiento.mkdirs();
-        }
-        File image = File.createTempFile(fileName, ".jpg", dirAlmacenamiento);
-        urlCompletaImg = image.getAbsolutePath();
-        return image;
-    }
+
     private void mostrarMsg(String msg){
         Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
     }

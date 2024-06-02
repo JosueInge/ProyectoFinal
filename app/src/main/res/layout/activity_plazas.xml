@@ -5,17 +5,122 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondomenu"
-    tools:context=".MiradoresActivity">
+    tools:context=".PlazasActivity">
 
-    <TextView
-        android:id="@+id/lblPlazas"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/VolverPlazas"
         android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_marginLeft="150dp"
-        android:text="PLAZAS"
-        android:textColor="@color/white"
-        android:layout_marginTop="10dp"
-        android:textSize="25dp"
-        android:textStyle="bold" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@android:drawable/ic_menu_revert"
+        app:backgroundTint="#00BCD4" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblPlazas"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="150dp"
+            android:text="PLAZAS"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/salvador"
+            android:layout_width="143dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/lblPlazas"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/plazasalvadordelm" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SALVADOR DEL MUNDO"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_below="@id/lblPlazas"
+            android:layout_marginLeft="170dp"/>
+        <TextView
+            android:id="@+id/descriptionmundo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="La Plaza Salvador del Mundo, antiguamente llamada Plaza Las Américas, es el lugar del Monumento al Divino Salvador del Mundo y está en la ciudad de San Salvador, El Salvador. Se le considera símbolo nacional del país."
+            android:textColor="@color/white"
+            android:layout_below="@id/lblPlazas"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="170dp"/>
+
+        <ImageView
+            android:id="@+id/masferrer"
+            android:layout_width="139dp"
+            android:layout_height="112dp"
+            android:layout_below="@id/salvador"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/plazamasferrer"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/salvador"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="23dp"
+            android:text="PLAZA MASFERRER"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/descriptionmasferrer"
+            android:layout_width="211dp"
+            android:layout_height="121dp"
+            android:layout_below="@id/descriptionmundo"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="56dp"
+            android:text="La plaza masferrer cuenta con onstrucción de 1500 m2, y capacidad de 800 visitantes. Cuenta con los establecimientos de Tiendas  con el objetivo de crear un ambiente seguro para todas las familias."
+            android:textColor="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/multi"
+            android:layout_width="141dp"
+            android:layout_height="128dp"
+            android:layout_below="@id/salvador"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="181dp"
+            android:background="@drawable/multiplaza"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MULTIPLAZA"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/masferrer"/>
+        <TextView
+            android:id="@+id/descriptiomulti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionmasferrer"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="27dp"
+            android:text="Ubicado en la zona central de El Salvador, Multiplaza se levanta bajo un concepto innovador y vanguardista, ideal para realizar compras y compartir momentos agradables con la familia y amigos. En este centro comercial,  "
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</ScrollView>
+
 
 </RelativeLayout>

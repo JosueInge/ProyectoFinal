@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoinfo"
+    tools:context=".LoschorrosActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/VolverMenuMr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/home"
+        app:backgroundTint="#00BCD4" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/UbicacionFinca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="90dp"
+        android:src="@android:drawable/ic_dialog_map"
+        app:backgroundTint="#9BF8CC" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lblTituloMirador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="TURICENTRO LOS CHORROS"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgMiradorC"
+                android:layout_width="360dp"
+                android:layout_height="203dp"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/lblTituloMirador"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/ploschorros1" />
+
+            <ImageView
+                android:id="@+id/fondotext1"
+                android:layout_width="410dp"
+                android:layout_height="145dp"
+                android:layout_below="@+id/imgMiradorC"
+                android:layout_marginLeft="01dp"
+                android:layout_marginTop="20dp"
+                android:background="#066E64" />
+            <TextView
+                android:id="@+id/lblinformacionMr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgMiradorC"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Ubicado a 18 kilómetros al oeste de San Salvador, este importante ícono turístico del país y que representa un santuario acuífero y ecológico abrió sus puertas al público en el año de 1957, como un homenaje al fundador del Sistema de Centros Recreativos de El Salvador, el ilustre poeta don Raúl Contreras. Estuvo cerrado por casi 7 años debido a los terremotos del 2001, inaugurándolo nuevamente el 13 de marzo del 2008."
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgMiradorMr2"
+                android:layout_width="360dp"
+                android:layout_height="203dp"
+                android:layout_below="@+id/lblinformacionMr"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/ploschorros2" />
+
+            <ImageView
+                android:id="@+id/fondotext2"
+                android:layout_width="410dp"
+                android:layout_height="113dp"
+                android:layout_below="@+id/imgMiradorMr2"
+                android:layout_marginLeft="01dp"
+                android:layout_marginTop="20dp"
+                android:background="#066E64" />
+            <TextView
+                android:id="@+id/lblUbicacionMr"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgMiradorMr2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="21dp"
+                android:text="Con una extensión de 12 manzanas el Parque Acuático Los Chorros tiene una belleza natural única; su nombre se debe a la existencia de gran cantidad de nacimientos de agua debido a las filtraciones de aguas lluvias en el Volcán de San Salvador, ofreciendo el servicio de 4 piscinas de agua completamente naturales"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/fondotext3"
+                android:layout_width="410dp"
+                android:layout_height="113dp"
+                android:layout_below="@+id/lblUbicacionMr"
+                android:layout_marginLeft="01dp"
+                android:layout_marginTop="20dp"
+                android:background="#066E64" />
+            <TextView
+                android:id="@+id/lblUbicacionMr2"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblUbicacionMr"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="21dp"
+android:text="Un aspecto innovador es la creación de un anfiteatro al aire libre, en el que se desarrollan actos con enfoque cultural, educativo y deportivo; también cuenta con amplias instalaciones en el área de vestíbulo, una pasarela peatonal y rampas inclusivas."
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

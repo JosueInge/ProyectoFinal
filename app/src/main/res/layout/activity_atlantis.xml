@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoinfo"
+    tools:context=".AtlantisActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/VolverMenuMr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/home"
+        app:backgroundTint="#00BCD4" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/UbicacionFinca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="90dp"
+        android:src="@android:drawable/ic_dialog_map"
+        app:backgroundTint="#9BF8CC" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lblTituloMirador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="PARQUE ACUATICO ATLANTIS"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgMiradorC"
+                android:layout_width="360dp"
+                android:layout_height="203dp"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/lblTituloMirador"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/atlantis1" />
+
+            <ImageView
+                android:id="@+id/fondotext1"
+                android:layout_width="410dp"
+                android:layout_height="191dp"
+                android:layout_below="@+id/imgMiradorC"
+                android:layout_marginLeft="01dp"
+                android:layout_marginTop="20dp"
+                android:background="#066E64" />
+
+            <TextView
+                android:id="@+id/lblinformacionMr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgMiradorC"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Atlantis es un vibrante y emocionante destino turístico en El Salvador, destacado por su amplia gama de atracciones acuáticas. Aquí, la diversión bajo el sol está garantizada con actividades como toboganes de caída libre, un río artificial para relajarse, la montaña rusa acuática y áreas especialmente diseñadas para los más pequeños. Con una visión de ser reconocido internacionalmente, Atlantis se esfuerza por ofrecer un servicio de calidad y mantener sus instalaciones en perfectas condiciones para una experiencia de relajación y entretenimiento inigualable​​​​."
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgMiradorMr2"
+                android:layout_width="360dp"
+                android:layout_height="203dp"
+                android:layout_below="@+id/lblinformacionMr"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/atlantis2" />
+
+            <ImageView
+                android:id="@+id/fondotext2"
+                android:layout_width="410dp"
+                android:layout_height="153dp"
+                android:layout_below="@+id/imgMiradorMr2"
+                android:layout_marginLeft="01dp"
+                android:layout_marginTop="20dp"
+                android:background="#066E64" />
+            <TextView
+                android:id="@+id/lblUbicacionMr"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgMiradorMr2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="21dp"
+android:text="Atlantis Parque Acuático se encuentra estratégicamente ubicado antes del desvío a la Costa del Sol, en el kilómetro 51 de la carretera que conduce a esta famosa playa en el departamento de La Paz, El Salvador. A tan solo 45 minutos de San Salvador, ofrece una escapada ideal para quienes buscan un día lleno de diversión y aventura."
+
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imgMiradorMr3"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:layout_below="@+id/fondotext2"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="20dp"
+                android:background="#066E64" />
+            <TextView
+                android:id="@+id/lblTarifa"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fondotext2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:text="El parque ofrece precios accesibles, con entradas generales a $10 para adultos y $6 para niños. Además, cuenta con promociones de paquetes familiares, como una oferta de 4 personas más almuerzo por solo $30 dólares, lo que lo convierte en una opción atractiva para grupos y familias."
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

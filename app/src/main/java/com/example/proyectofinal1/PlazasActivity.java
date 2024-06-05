@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -15,6 +16,12 @@ FloatingActionButton VolverPlazas;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plazas);
 
+        ImageButton PlazaSalvador = findViewById(R.id.salvador);
+
+        PlazaSalvador.setOnClickListener(v -> {
+            Intent intent = new Intent(PlazasActivity.this, HomeActivity.class);
+            startActivity(intent);
+        });
         VolverPlazas = findViewById(R.id.VolverPlazas);
         VolverPlazas.setOnClickListener(new View.OnClickListener() {
             @Override

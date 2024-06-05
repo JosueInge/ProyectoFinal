@@ -8,15 +8,15 @@ import android.view.View;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class TermalesActivity extends AppCompatActivity {
-FloatingActionButton VolverTermalesHome;
+public class ParquelafActivity extends AppCompatActivity {
+FloatingActionButton VolverHomeParquelaf;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_termales);
+        setContentView(R.layout.activity_parquelaf);
 
-        VolverTermalesHome = findViewById(R.id.VolverTermalesHome);
-        VolverTermalesHome.setOnClickListener(new View.OnClickListener() {
+        VolverHomeParquelaf = findViewById(R.id.VolverLafHome);
+        VolverHomeParquelaf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {VolverHome(); }
 

@@ -2,18 +2,31 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.proyectofinal1">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
     <application
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logoapp"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal1">
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JoyadecerenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlazasalvadorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParquelafActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ElboqueronActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CafealbaniaActivity"
+            android:exported="false" />
         <activity
             android:name=".ParquecuscActivity"
             android:exported="false" />

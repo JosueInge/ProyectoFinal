@@ -8,7 +8,7 @@
     tools:context=".AtlantisActivity">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/VolverMenuMr"
+        android:id="@+id/VolverHomeAtlantis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -128,6 +128,14 @@ android:text="Atlantis Parque Acuático se encuentra estratégicamente ubicado a
                 android:text="El parque ofrece precios accesibles, con entradas generales a $10 para adultos y $6 para niños. Además, cuenta con promociones de paquetes familiares, como una oferta de 4 personas más almuerzo por solo $30 dólares, lo que lo convierte en una opción atractiva para grupos y familias."
                 android:textSize="15dp"
                 android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imgMap"
+                android:layout_width="360dp"
+                android:layout_height="203dp"
+                android:layout_below="@+id/lblTarifa"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/atlantismap" />
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>

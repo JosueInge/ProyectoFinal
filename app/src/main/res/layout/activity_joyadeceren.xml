@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondoinfo"
-    tools:context=".ParquecuscActivity">
+    tools:context=".JoyadecerenActivity">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/VolverCuscHome"
+        android:id="@+id/VolverJoyaHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -31,8 +31,8 @@
                 android:id="@+id/lblTituloMirador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="80dp"
-                android:text="PARQUE CUSCATLAN"
+                android:layout_marginLeft="110dp"
+                android:text="JOYA DE CEREN"
                 android:textColor="@color/black"
                 android:layout_marginTop="15dp"
                 android:textSize="25dp"
@@ -45,24 +45,25 @@
                 android:layout_marginLeft="25dp"
                 android:layout_below="@+id/lblTituloMirador"
                 android:layout_marginTop="25dp"
-                android:background="@drawable/parquecusc1" />
+                android:background="@drawable/joyadeceren1" />
 
             <ImageView
                 android:id="@+id/fondotext1"
-                android:layout_width="410dp"
-                android:layout_height="122dp"
+                android:layout_width="match_parent"
+                android:layout_height="163dp"
                 android:layout_below="@+id/imgMiradorC"
-                android:layout_marginLeft="01dp"
+                android:layout_marginLeft="0dp"
                 android:layout_marginTop="20dp"
                 android:background="#066E64" />
+
             <TextView
                 android:id="@+id/lblinformacionMr"
-                android:layout_width="wrap_content"
+                android:layout_width="414dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imgMiradorC"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:text="El Parque Cuscatlán es un espacio de acceso público y gratuito de 10 manzanas, ubicado en la ciudad de San Salvador y su nombre viene del náhuat que significa “lugar de cosas preciosas”. Es un espacio seguro y activo en el que convergen el arte, la cultura y el deporte y donde se promueve la convivencia ciudadana."
+                android:layout_marginTop="18dp"
+                android:text="Este importante sitio arqueológico, hasta el momento es el único Patrimonio Mundial Declarado por la UNESCO el 11 de diciembre de 1993. Este sitio evidencia la vida cotidiana de una aldea del Periodo Clásico Tardío que fue sepultada por la erupción del Volcán Loma Caldera, aproximadamente para el 650 d.C. Por este evento natural, los restos arqueológicos del sitio se encuentran intactos y en buen estado de conservación. Por esta situación, también es conocido como la Pompeya de América."
                 android:textColor="@color/white"
                 android:textSize="15dp"
                 android:textStyle="bold" />
@@ -74,28 +75,49 @@
                 android:layout_below="@+id/lblinformacionMr"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="27dp"
-                android:background="@drawable/parquecusc2" />
+                android:background="@drawable/joyadeceren2" />
 
             <ImageView
                 android:id="@+id/fondotext2"
-                android:layout_width="410dp"
-                android:layout_height="170dp"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
                 android:layout_below="@+id/imgMiradorMr2"
-                android:layout_marginLeft="01dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="16dp"
                 android:background="#066E64" />
+
             <TextView
                 android:id="@+id/lblUbicacionMr"
-                android:layout_width="380dp"
+                android:layout_width="390dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imgMiradorMr2"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="21dp"
-                android:text="El Parque Cuscatlán es un espacio de 71,000 metros cuadrados y posee más de 900 árboles de especies nativas y foráneas. Esta diversidad de flora ofrece un descanso en el corazón de la ciudad. Sus árboles y arbustos ofrecen valiosos servicios ambientales, ya que los árboles limpian el aire y permiten la absorción de agua lluvia. Gracias a la sombra de los árboles, se genera un microclima fresco y agradable para sus visitantes."
+                android:text="Además, es uno de los 5 Parques Arqueológicos administrados por el Ministerio de Cultura. Cuenta con aproximadamente 5 hectáreas de terreno distribuidas en 2 grandes espacios de funcionamiento: La zona de reserva arqueológica y el área administrativa: cafetería, servicio de guías gratuitos, área técnica y de uso público (Parque Arqueológico)."
                 android:textColor="@color/white"
                 android:textSize="15dp"
                 android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/fondotext3"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_below="@+id/lblUbicacionMr"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="30dp"
+                android:background="#066E64" />
+
+            <TextView
+                android:id="@+id/lblUbicacionMr2"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblUbicacionMr"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Joya de Cerén se ubica en la zona central del país, dentro del Valle de Zapotitán, a 36 km al noroeste de la ciudad de San Salvador y a unos 6 km al sur del Municipio de San Juan Opico, Departamento de La Libertad."
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
     </ScrollView>

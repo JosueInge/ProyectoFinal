@@ -38,19 +38,29 @@
         android:layout_marginTop="10dp"
         android:textSize="25dp"
         android:textStyle="bold" />
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="401dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblBalnearios"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:text="TOCA LA IMAGEN PARA OBTENER MAS INFORMACION"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
     <ImageButton
         android:id="@+id/chorros"
         android:layout_width="142dp"
         android:layout_height="136dp"
-        android:layout_below="@id/lblBalnearios"
+        android:layout_below="@id/info"
         android:background="@drawable/loschorros"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/lblBalnearios"
+        android:layout_below="@id/info"
         android:layout_marginLeft="170dp"
         android:layout_marginTop="14dp"
         android:text="PARQUE RECREATIVO LOS CHORROS"
@@ -61,7 +71,7 @@
         android:id="@+id/descriptionchorros"
         android:layout_width="221dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/lblBalnearios"
+        android:layout_below="@id/info"
         android:layout_marginLeft="170dp"
         android:layout_marginTop="36dp"
         android:text="A pocos minutos de la capital, este destino con aguas de nacimiento natural y procedentes de laderas volcánicas es una excelente opción para relajarte y disfrutar con tu familia y amigos.

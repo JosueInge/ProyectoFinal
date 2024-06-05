@@ -36,8 +36,8 @@
         android:layout_marginTop="10dp"
         android:textSize="25dp"
         android:textStyle="bold" />
-    <ImageView
-        android:id="@+id/Imgparques"
+    <ImageButton
+        android:id="@+id/ParqueCusc"
         android:layout_width="142dp"
         android:layout_height="136dp"
         android:layout_below="@id/lblParques"
@@ -68,7 +68,7 @@
         android:id="@+id/imgparque"
         android:layout_width="139dp"
         android:layout_height="112dp"
-        android:layout_below="@id/Imgparques"
+        android:layout_below="@id/ParqueCusc"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/parquelafamilia"
@@ -78,7 +78,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Imgparques"
+        android:layout_below="@+id/ParqueCusc"
         android:layout_marginLeft="170dp"
         android:layout_marginTop="19dp"
         android:text="PARQUE DE LA FAMILIA"
@@ -101,7 +101,7 @@
         android:id="@+id/imgbicentenario"
         android:layout_width="139dp"
         android:layout_height="112dp"
-        android:layout_below="@id/Imgparques"
+        android:layout_below="@id/ParqueCusc"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="167dp"
         android:background="@drawable/parquebicentenario"/>

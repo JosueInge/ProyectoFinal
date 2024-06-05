@@ -37,12 +37,21 @@
                 android:layout_marginTop="10dp"
                 android:textSize="25dp"
                 android:textStyle="bold" />
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="401dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblCaminatas"
+                android:layout_marginLeft="25dp"
+                android:text="TOCA LA IMAGEN PARA OBTENER MAS INFORMACION"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/RutaDePaz"
                 android:layout_width="126dp"
                 android:layout_height="130dp"
-                android:layout_below="@id/lblCaminatas"
+                android:layout_below="@id/info"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="13dp"
                 android:layout_marginTop="2dp"
@@ -53,19 +62,19 @@
                 android:text="RUTA DE PAZ"
                 android:textStyle="bold"
                 android:textColor="@color/white"
-                android:layout_below="@id/lblCaminatas"
+                android:layout_below="@id/info"
                 android:layout_marginLeft="170dp"/>
             <TextView
                 android:id="@+id/description"
                 android:layout_width="204dp"
                 android:layout_height="83dp"
-                android:layout_below="@id/lblCaminatas"
+                android:layout_below="@id/info"
                 android:layout_marginLeft="170dp"
                 android:layout_marginTop="23dp"
                 android:text="Ruta de Paz incorpora a los 26 municipios del departamento de Morazán, organizados en seis circuitos turísticos intermunicipales; su nombre es una alusión al período de paz en que viven estos pueblos después de la guerra civil de los años 80 y la tranquilidad que caracteriza a la zona."
                 android:textColor="@color/white" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/Ruta"
                 android:layout_width="126dp"
                 android:layout_height="130dp"
@@ -124,7 +133,7 @@ Tradiciones locales, una importante cultura del café, actividades de aventura, 
                 android:text="cuyo nombre indígena proviene de la palabra náhuat Ilamatepet y significa: 'el cerro de la anciana', es un estratovolcán ubicado en el departamento de Santa Ana que tiene una elevación de 2.381 m s. n. m.; por lo que es el volcán más alto de El Salvador.​"
                 android:textColor="@color/white" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/ImgElImporible"
                 android:layout_width="126dp"
                 android:layout_height="130dp"

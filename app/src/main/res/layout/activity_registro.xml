@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".RegistroActivity">
+
+    <TextView
+        android:id="@+id/lblCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:text="DIGITE LAS CREDENCIALES"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <EditText
+    android:id="@+id/txtUsuario"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/lblCorreo"
+    android:hint="Usuario"
+    android:textColor="@color/white"
+    android:layout_marginTop="70dp"
+    android:textColorHint="@color/white"
+    android:textSize="20dp"
+    android:inputType="text"/>
+    <EditText
+        android:id="@+id/txtContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUsuario"
+        android:hint="Usuario"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:inputType="text"/>
+    <Button
+        android:id="@+id/btnRegistroUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtContraseña"
+        android:layout_marginLeft="100dp"
+        android:text="REGISTRAR USUARIO"/>
+</RelativeLayout>

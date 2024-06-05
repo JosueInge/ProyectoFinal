@@ -8,15 +8,16 @@ import android.view.View;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class TermalesActivity extends AppCompatActivity {
-FloatingActionButton VolverTermalesHome;
+public class CafealbaniaActivity extends AppCompatActivity {
+
+    FloatingActionButton VolverCafeHome;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_termales);
+        setContentView(R.layout.activity_cafealbania);
 
-        VolverTermalesHome = findViewById(R.id.VolverTermalesHome);
-        VolverTermalesHome.setOnClickListener(new View.OnClickListener() {
+        VolverCafeHome = findViewById(R.id.VolverCafeHome);
+        VolverCafeHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {VolverHome(); }
 
@@ -26,4 +27,4 @@ FloatingActionButton VolverTermalesHome;
         Intent abrirVentana = new Intent(getApplicationContext(), HomeActivity.class);
         startActivity(abrirVentana);
     }
-}
+    }

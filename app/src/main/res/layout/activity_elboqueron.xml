@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondoinfo"
-    tools:context=".ParquecuscActivity">
+    tools:context=".ElboqueronActivity">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/VolverCuscHome"
+        android:id="@+id/VolverHomeBoqueron"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -18,6 +18,7 @@
         android:layout_marginBottom="20dp"
         android:src="@drawable/home"
         app:backgroundTint="#00BCD4" />
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -31,8 +32,8 @@
                 android:id="@+id/lblTituloMirador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="80dp"
-                android:text="PARQUE CUSCATLAN"
+                android:layout_marginLeft="120dp"
+                android:text="EL BOQUERON"
                 android:textColor="@color/black"
                 android:layout_marginTop="15dp"
                 android:textSize="25dp"
@@ -45,24 +46,25 @@
                 android:layout_marginLeft="25dp"
                 android:layout_below="@+id/lblTituloMirador"
                 android:layout_marginTop="25dp"
-                android:background="@drawable/parquecusc1" />
+                android:background="@drawable/elboqueron2" />
 
             <ImageView
                 android:id="@+id/fondotext1"
                 android:layout_width="410dp"
-                android:layout_height="122dp"
+                android:layout_height="175dp"
                 android:layout_below="@+id/imgMiradorC"
                 android:layout_marginLeft="01dp"
                 android:layout_marginTop="20dp"
                 android:background="#066E64" />
+
             <TextView
                 android:id="@+id/lblinformacionMr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imgMiradorC"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:text="El Parque Cuscatlán es un espacio de acceso público y gratuito de 10 manzanas, ubicado en la ciudad de San Salvador y su nombre viene del náhuat que significa “lugar de cosas preciosas”. Es un espacio seguro y activo en el que convergen el arte, la cultura y el deporte y donde se promueve la convivencia ciudadana."
+                android:layout_marginTop="18dp"
+                android:text="Explore el Parque Nacional El Boquerón y la ciudad de San Salvador en este tour combinado de todo el día. Primero, diríjase al parque nacional, que se encuentra en la cima del Volcán de San Salvador, y deténgase en la atracción principal: un cráter que mide 3.1 millas (cinco kilómetros) de diámetro y 1,831 pies (558 metros) de profundidad. Desde allí, regrese a la ciudad para visitar lugares importantes, como el Monumento a la Revolución, el Parque Cuscatlán, la Catedral Metropolitana y más."
                 android:textColor="@color/white"
                 android:textSize="15dp"
                 android:textStyle="bold" />
@@ -74,29 +76,37 @@
                 android:layout_below="@+id/lblinformacionMr"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="27dp"
-                android:background="@drawable/parquecusc2" />
+                android:background="@drawable/elboqueron1" />
 
             <ImageView
                 android:id="@+id/fondotext2"
-                android:layout_width="410dp"
-                android:layout_height="170dp"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
                 android:layout_below="@+id/imgMiradorMr2"
                 android:layout_marginLeft="01dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="16dp"
                 android:background="#066E64" />
+
             <TextView
                 android:id="@+id/lblUbicacionMr"
-                android:layout_width="380dp"
+                android:layout_width="390dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imgMiradorMr2"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="21dp"
-                android:text="El Parque Cuscatlán es un espacio de 71,000 metros cuadrados y posee más de 900 árboles de especies nativas y foráneas. Esta diversidad de flora ofrece un descanso en el corazón de la ciudad. Sus árboles y arbustos ofrecen valiosos servicios ambientales, ya que los árboles limpian el aire y permiten la absorción de agua lluvia. Gracias a la sombra de los árboles, se genera un microclima fresco y agradable para sus visitantes."
+                android:text="Disfruta de un día de exploración tanto natural como urbana en San Salvador. El almuerzo no está incluido, pero las opciones para comer en el parque estarán disponibles. Recogida y regreso al hotel en San Salvador incluido. Elige entre varios horarios de salida por la mañana. Servicios incluidos
+Lea más sobre Lo mejor de San Salvador en 1 día: El Boquerón + Tobogán Arco Iris + Centro Histórico."
                 android:textColor="@color/white"
                 android:textSize="15dp"
                 android:textStyle="bold" />
-
-
+            <ImageView
+                android:id="@+id/imgMap"
+                android:layout_width="360dp"
+                android:layout_height="203dp"
+                android:layout_below="@+id/lblUbicacionMr"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/cafealbaniamap" />
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>

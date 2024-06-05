@@ -38,7 +38,7 @@
                 android:textSize="25dp"
                 android:textStyle="bold" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imgAlbania"
                 android:layout_width="149dp"
                 android:layout_height="134dp"
@@ -64,7 +64,7 @@
 android:text="Vive la experiencia de montar bicicleta y tabla de surf por los aires (apróximadamente 30mts. de altura) sobre cables y con todas las medidas de seguridad. O donde puedes practicar Rapel con diferentes niveles de dificultad dependiendo de la distancia."
                 android:textColor="@color/white" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imgPicnic"
                 android:layout_width="149dp"
                 android:layout_height="134dp"

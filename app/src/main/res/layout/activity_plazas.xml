@@ -39,7 +39,7 @@
             android:textSize="25dp"
             android:textStyle="bold" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/salvador"
             android:layout_width="143dp"
             android:layout_height="120dp"

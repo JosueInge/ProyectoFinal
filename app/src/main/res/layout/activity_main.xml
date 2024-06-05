@@ -7,6 +7,13 @@
     android:background="@drawable/fondologin"
     android:padding="16dp"
     tools:ignore="ExtraText">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <TextView
         android:id="@+id/lblTituloMenu"
@@ -29,7 +36,7 @@
         app:srcCompat="@drawable/loginicon" />
 
     <EditText
-        android:id="@+id/txtUsuario"
+        android:id="@+id/txtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imgLogin"
@@ -44,7 +51,7 @@
         android:id="@+id/txtContraseña"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtUsuario"
+        android:layout_below="@id/txtEmail"
         android:layout_marginTop="16dp"
         android:hint="Contraseña"
         android:textColor="@color/white"
@@ -71,5 +78,28 @@
         android:layout_marginLeft="40dp"
         android:textStyle="bold"
         android:text="INGRESE LAS CREDENCIALES PARA ACCEDER"/>
+
+    <TextView
+        android:id="@+id/lblNuevoUsuario"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnIniciarSesion"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
+        android:text="¿NO TIENES UN USUARIO? ¡REGISTRATE!"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnRegistrarUsuario"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblNuevoUsuario"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#2DFFFFFF"
+        android:text="REGISTRARSE" />
+
+    </RelativeLayout>
+</ScrollView>
 
 </RelativeLayout>

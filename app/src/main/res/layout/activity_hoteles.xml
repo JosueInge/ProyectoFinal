@@ -32,17 +32,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="150dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:text="HOTELES"
                 android:textColor="@color/white"
                 android:textSize="25dp"
                 android:textStyle="bold" />
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="401dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblHoteles"
+                android:layout_marginLeft="25dp"
+                android:text="TOCA LA IMAGEN PARA OBTENER MAS INFORMACION"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/HotelDecameron"
                 android:layout_width="142dp"
                 android:layout_height="136dp"
-                android:layout_below="@id/lblHoteles"
+                android:layout_below="@id/info"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="15dp"
                 android:background="@drawable/hoteldecam"/>
@@ -53,19 +62,19 @@
                 android:textStyle="bold"
                 android:layout_marginTop="10dp"
                 android:textColor="@color/white"
-                android:layout_below="@id/lblHoteles"
+                android:layout_below="@id/info"
                 android:layout_marginLeft="170dp"/>
             <TextView
                 android:id="@+id/description"
                 android:layout_width="216dp"
                 android:layout_height="115dp"
-                android:layout_below="@id/lblHoteles"
+                android:layout_below="@id/info"
                 android:layout_marginLeft="170dp"
                 android:layout_marginTop="30dp"
                 android:text="El Hotel Royal Decameron Salinitas le ofrecemos el más sorprendente y completo Centro de Convenciones conformado por 3 Grandes Salones con capacidad de hasta 2000 personas, equipados con la más alta tecnología que le garantiza un rotundo éxito en sus reuniones empresariales, con todas las ventajas de nuestro Resort."
                 android:textColor="@color/white" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/hotelsevilla"
                 android:layout_width="145dp"
                 android:layout_height="119dp"
